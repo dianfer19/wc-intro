@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>📦 Web Components desde Cero</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      line-height: 1.6;
+      padding: 2rem;
+      background: #f9f9f9;
+    }
+
+    h1 {
+      color: #222;
+    }
+
+    h2 {
+      color: #444;
+      margin-top: 2rem;
+    }
+
+    ul {
+      margin-top: 0.5rem;
+      padding-left: 1.2rem;
+    }
+
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    code {
+      background: #eee;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.95rem;
+    }
+
+    .card-link {
+      background: white;
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+  </style>
+</head>
+<body>
+<h1>📦 Web Components desde Cero</h1>
+
+<p>Este proyecto explica cómo funcionan los Web Components utilizando ejemplos progresivos. Aquí aprenderás:</p>
+
+<ul>
+  <li>✅ Qué son los <strong>Custom Elements</strong></li>
+  <li>✅ Cómo y por qué usar <strong>Shadow DOM</strong></li>
+  <li>✅ Cómo encapsular estilos y estructura</li>
+  <li>✅ Cómo pasar <strong>atributos dinámicos</strong></li>
+  <li>🔜 Cómo emitir y escuchar eventos personalizados</li>
+</ul>
+
+<h2>📁 Ejemplos disponibles:</h2>
+
+<div class="card-link">
+  <h3><a href="./01-first-web-component/index.html">01 – Sin Shadow DOM (riesgos de no encapsular)</a></h3>
+  <p>Este ejemplo muestra cómo los estilos del componente afectan al resto del DOM, lo cual puede causar colisiones.</p>
+</div>
+
+<div class="card-link">
+  <h3><a href="./02-shadow-encapsulado/index.html">02 – Con Shadow DOM (encapsulamiento real)</a></h3>
+  <p>En este ejemplo se usa <code>attachShadow()</code> para aislar el DOM y estilos del componente.</p>
+</div>
+
+<h2>🎯 Recomendación</h2>
+<p>
+  Siempre que crees Web Components reutilizables, <strong>usa Shadow DOM</strong> para evitar conflictos y asegurar que tus estilos no se mezclen con los de otros componentes o el DOM global.
+</p>
+
+<p>Próximamente: más ejemplos con slots, eventos y atributos observados.</p>
+</body>
+</html>
