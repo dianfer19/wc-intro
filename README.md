@@ -1,8 +1,10 @@
 # 📦 Web Components desde Cero
 
-Este repositorio contiene una serie de ejemplos prácticos para aprender **Web Components** de forma progresiva. Está pensado para quienes quieren dominar esta tecnología **desde cero y con ejemplos reales**.
+Este repositorio contiene una serie de ejemplos prácticos para aprender **Web Components** de forma progresiva. Está
+pensado para quienes quieren dominar esta tecnología **desde cero y con ejemplos reales**.
 
-👨‍💻 Aprendemos juntos en cada paso, entendiendo cómo funcionan y **por qué vale la pena usarlos** para crear componentes web modernos, encapsulados y reutilizables.
+👨‍💻 Aprendemos juntos en cada paso, entendiendo cómo funcionan y **por qué vale la pena usarlos** para crear componentes
+web modernos, encapsulados y reutilizables.
 
 ---
 
@@ -67,7 +69,7 @@ cd web-components-intro
 
 ## 📺 En vivo por Twitch
 
-📡 Este proyecto se desarrolla en directo por [Twitch](https://twitch.tv/tuusuario).  
+📡 Este proyecto se desarrolla en directo por [Twitch](https://twitch.tv/dianfer19).  
 ¡Acompáñame mientras aprendemos, fallamos y creamos cosas útiles juntos! 😄
 
 ---
@@ -87,4 +89,5 @@ cd web-components-intro
 
 ---
 
-> ✨ Este es un proyecto abierto para compartir conocimiento, enseñar y aprender juntos sobre desarrollo moderno con Web Components.
+> ✨ Este es un proyecto abierto para compartir conocimiento, enseñar y aprender juntos sobre desarrollo moderno con Web
+> Components.
