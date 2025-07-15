@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web-Component</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <!--    <div class="card">-->
+    <!--        <img src="https://i.pravatar.cc/300" alt="John">-->
+    <!--        <div class="content">-->
+    <!--            <h1>John</h1>-->
+    <!--            <p>Arquitecto e ingeniero</p>-->
+    <!--            <button id="boton">Clik on me</button>-->
+
+    <!--        </div>-->
+    <!--    </div>-->
+    <div id="card_container">
+        <card-example id="micomponente" name="Dianfer" position="Programador Senior"></card-example>
+    </div>
+    <!--    <card-example name="Fernando" position="Programador Junior"></card-example>-->
+    <!--    <h1>Hola como estás</h1>-->
+    <div style="padding-bottom: 20px;">
+        <button id="eliminar">Eliminar Componente</button>
+        <button id="agregar">Agregar Componente</button>
+    </div>
+    <wc-modal id="modal" titulo="Cuidado 😒" mensaje="Componente Eliminado"></wc-modal>
+
+</div>
+<script type="module" src="card-example.js"></script>
+<script type="module" src="../modal/wc-modal.js"></script>
+<script>
+    // window.addEventListener('DOMContentLoaded', () => {
+    //     document.querySelector("#boton").addEventListener("click", (event) => {
+    //         alert("click");
+    //     })
+    // });
+    window.addEventListener('DOMContentLoaded', () => {
+        document.querySelector("#eliminar").addEventListener("click", () => {
+            const card = document.querySelector("#micomponente");
+            card.remove();
+            const modal = document.querySelector("#modal");
+            modal.open();
+        })
+    });
+    window.addEventListener('DOMContentLoaded', () => {
+        document.querySelector("#agregar").addEventListener("click", () => {
+            if (!document.querySelector("#micomponente")) {
+                const new_card = document.createElement('card-example');
+                new_card.id = 'micomponente';
+                new_card.setAttribute("name", "Dianfer");
+                new_card.setAttribute("position", "Programador Senior");
+                document.querySelector("#card_container").appendChild(new_card);
+                const modal = document.createElement('wc-modal');
+                modal.id = 'mimodal';
+                modal.setAttribute("titulo", "Componente");
+                modal.setAttribute("mensaje", "🎇Empleado Creado");
+                document.querySelector("#card_container").appendChild(modal);
+                modal.open();
+            }
+        })
+
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Web Component SIN Shadow DOM</title>
+
+  <style>
+    /* ⚠️ Esto se verá afectado por los estilos del componente */
+    h2 {
+      font-weight: normal;
+      color: blue; /* Este color será sobrescrito dentro del user-card */
+    }
+  </style>
+</head>
+<body>
+<h3><a href="../index.html">🌐 Página Principal</a></h3>
+
+<user-card-no-shadow name="Usuario Expuesto" avatar="https://i.pravatar.cc/150?img=10"></user-card-no-shadow>
+
+<h2>Otro título en la página</h2>
+
+<script type="module" src="./user-card-no-shadow.js"></script>
+</body>
+</html>
