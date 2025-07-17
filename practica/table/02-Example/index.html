@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabla con Web Component</title>
+    <link rel="stylesheet" href="../../../styles/style.css">
+</head>
+<body style="text-align: center">
+<h3><a href="../../../index.html">🌐 Página Principal</a></h3>
+<h2>🔥 Tabla de Usuarios</h2>
+<wc-table id="table"></wc-table>
+<script type="module" src="wc-table.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+        const response = await fetch('https://randomuser.me/api/?results=10&?gender=female');
+        const json = await response.json()
+        console.log("datos 🎇", json)
+        const datos = json.results.map(user => ({
+            nombre: user.name.first,
+            edad: user.dob.age,
+            email: user.email,
+            city: user.location.city,
+        }));
+        document.querySelector('#table').data = datos;
+
+    })
+</script>
+</body>
+</html>

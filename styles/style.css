@@ -1,0 +1,57 @@
+body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    padding: 2rem;
+    background: #f9f9f9;
+}
+
+h1 {
+    color: #222;
+}
+
+h2 {
+    color: #444;
+    margin-top: 2rem;
+}
+
+ul {
+    margin-top: 0.5rem;
+    padding-left: 1.2rem;
+}
+
+a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+code {
+    background: #eee;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+.card-link {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; /* Espacio entre el selector y el input */
+    margin-bottom: 1.5rem;
+}
+
+.controls input {
+    padding: 0.5rem;
+    font-size: 1rem;
+}

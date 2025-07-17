@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabla con Web Component</title>
+    <link rel="stylesheet" href="../../../styles/style.css">
+</head>
+<body style="text-align: center">
+<h3><a href="../../../index.html">🌐 Página Principal</a></h3>
+<h2>🔥 Tabla de Usuarios</h2>
+<div class="controls">
+
+
+</div>
+<div class="controls">
+    <input type="text" id="busqueda" placeholder="Buscar Usuarios" style="margin-bottom: 1rem; padding: 0.5rem;">
+    <wc-selector-pages id="selector"></wc-selector-pages>
+</div>
+<wc-table id="table"></wc-table>
+<script type="module" src="wc-selector-pages.js"></script>
+<script type="module" src="wc-table.js"></script>
+<script type="module" src="index.js"></script>
+</body>
+</html>

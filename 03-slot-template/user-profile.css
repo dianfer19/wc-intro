@@ -1,0 +1,21 @@
+.profile {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    max-width: 300px;
+    font-family: sans-serif;
+}
+
+.profile img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.profile h3 {
+    margin: 10px 0 5px 0;
+    color: #00d331;
+}
+
+.profile ::slotted(p) {
+    color: #555;
+}

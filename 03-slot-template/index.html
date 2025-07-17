@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slot y template</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+<h3><a href="../index.html">🌐 Página Principal</a></h3>
+<h1>Ejemplo de Web Component: Slot y Template </h1>
+<info-box titulo="Info Box">
+    contenido dentro del custom Element o Web Component
+</info-box>
+<user-profile nombre="Dianfer" avatar="https://i.pravatar.cc/150?img=19">
+    <p slot="alias">The greatest of all time.</p>
+    <p slot="cargo">Programador backend con alma de Front </p>
+</user-profile>
+<script type="module" src="user-profile.js"></script>
+<script type="module" src="./info-box.js"></script>
+</body>
+</html>

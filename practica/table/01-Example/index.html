@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabla con Web Component</title>
+    <link rel="stylesheet" href="../../../styles/style.css">
+</head>
+<body style="text-align: center">
+<h3><a href="../../../index.html">🌐 Página Principal</a></h3>
+<h2>🔥 Tabla de Usuarios</h2>
+<wc-table id="table"></wc-table>
+<script type="module" src="wc-table.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        const datos = [
+            {nombre: 'Juan', apellido: 'Perez', edad: 25},
+            {nombre: 'Maria', apellido: 'Lopez', edad: 23},
+            {nombre: 'Pedro', apellido: 'Gonzalez', edad: 22}
+        ];
+        console.log("datos 🎇", datos)
+        document.querySelector('#table').data = datos;
+
+    })
+</script>
+</body>
+</html>
