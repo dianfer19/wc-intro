@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Component Markdown Viewer</title>
+    <style>
+        wc-markdown {
+            display: block;
+            max-width: 1200px;
+            margin: 40px auto;
+            width: 100%;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+
+<!--<iframe src="nginx.md" style="width:100%;height:500px;"></iframe>-->
+<wc-markdown id="md-reader" md-file="README.md">
+    <h3><a href="../../index.html">🌐 Página Principal</a></h3>
+</wc-markdown>
+<!--<div id="content"></div>-->
+<script type="module" src="wc-markdown.js"></script>
+<!--<script>-->
+<!--    fetch('nginx.md')-->
+<!--        .then(res => res.text())-->
+<!--        .then(md => {-->
+<!--            document.getElementById('content').innerHTML = marked.parse(md);-->
+<!--        });-->
+<!--</script>-->
+</body>
+</html>

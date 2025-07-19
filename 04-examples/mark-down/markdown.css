@@ -1,0 +1,132 @@
+/*loader*/
+.loader {
+    width: 48px;
+    height: 48px;
+    display: block;
+    margin: 15px auto;
+    position: relative;
+    color: #FFF;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+.loader::after,
+.loader::before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    left: 50%;
+    transform: scale(0.5) translate(0, 0);
+    background-color: #FFF;
+    border-radius: 50%;
+    animation: animloader 1s infinite ease-in-out;
+    border: 1px solid #000; /* ✅ Borde negro también acá */
+
+}
+
+.loader::before {
+    background-color: #FF3D00;
+    transform: scale(0.5) translate(-48px, -48px);
+    border: 1px solid #000; /* ✅ Borde negro también acá */
+
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animloader {
+    50% {
+        transform: scale(1) translate(-50%, -50%);
+    }
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#content {
+    max-width: 1200px;
+    width: 100%;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #333;
+    line-height: 1.7;
+}
+
+/* Estilo básico para Markdown */
+#content h1, #content h2, #content h3 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+#content h1 {
+    font-size: 2em;
+}
+
+#content h2 {
+    font-size: 1.6em;
+}
+
+#content h3 {
+    font-size: 1.3em;
+}
+
+#content p {
+    margin: 1em 0;
+}
+
+#content a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+#content a:hover {
+    text-decoration: underline;
+}
+
+#content ul, #content ol {
+    margin-left: 2em;
+}
+
+#content code {
+    background-color: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+#content pre code {
+    display: block;
+    padding: 1em;
+    overflow-x: auto;
+    background-color: #272822;
+    color: #f8f8f2;
+    border-radius: 6px;
+}
+
+#content blockquote {
+    border-left: 4px solid #ccc;
+    padding-left: 1em;
+    color: #666;
+    margin: 1em 0;
+    font-style: italic;
+}

@@ -1,0 +1,36 @@
+
+.custom-select {
+    position: relative;
+    width: 250px;
+}
+
+.custom-select select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    padding: 12px 16px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.custom-select select:focus {
+    outline: none;
+    border-color: #007acc;
+}
+
+/* Flechita personalizada (solo visual) */
+.custom-select::after {
+    content: '▼';
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #555;
+    font-size: 14px;
+}

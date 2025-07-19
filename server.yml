@@ -1,0 +1,12 @@
+services:
+  wc_nginx:
+    build:
+      context: .
+      dockerfile: ./05-extra-docker-nginx/Dockerfile
+    image: wc_nginx_image
+    container_name: wc_nginx_container
+    restart: "no"
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/usr/share/nginx/html
